@@ -11,4 +11,11 @@ public class CustomerRecord {
 	private double startBalance;
 	private double mutation;
 	private double endBalance;
+	@Override
+	public String toString() {
+		return "CustomerRecord [recordRefNumber=" + recordRefNumber + ", accountNumber=" + accountNumber
+				+ ", description=" + description + ", startBalance=" + startBalance + ", mutation=" + mutation
+				+ ", endBalance=" + endBalance + "]";
+	}
 }
+

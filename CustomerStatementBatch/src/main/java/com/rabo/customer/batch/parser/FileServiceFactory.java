@@ -1,38 +1,25 @@
 package com.rabo.customer.batch.parser;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
-import javax.annotation.PostConstruct;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 /**
- * Factory class using spring factory annotation design to get object of xml and csv parser 
+ * Factory class using factory design to get object of xml and csv parser 
  * dynamicalally based on our input
- * @author kumar
+ * @author kumaran
  *
  */
-@Component
 public class FileServiceFactory {
 
-	@Autowired
-	private List<CustomerFileProcessor> processorService;
-
-	private static final Map<String, CustomerFileProcessor> custServiceMap = new HashMap<>();
-
-	@PostConstruct
-	public void init() {
-		for(CustomerFileProcessor service : processorService) {
-			custServiceMap.put(service.getClassObject(), service);
-		}
-	}
-
-	public CustomerFileProcessor getService(String type) {
-		CustomerFileProcessor service = custServiceMap.get(type);
-		if(service == null) throw new RuntimeException("Unknown service type: " + type);
-		return service;
+	/**
+	 * Factory method will reutrn instance of file processor to be called bases on file input
+	 * @param fileType
+	 * @return
+	 */
+	public static CustomerFileProcessor getFileClass(String fileType) {
+		if ( fileType.equals("csv") )
+			return new CustomerCSVParser();
+		else if ( fileType.equals("xml") )
+			return new CustomerXMLParser();
+		return null;
 	}
 }
