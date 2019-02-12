@@ -26,6 +26,6 @@ Final report will be generated based on data validation , which is placed under 
 To execute the application in any IDE please follow the below steps:
 
 1.Import the poject and maven project.<br/>
-2.Please make sure you have JDK8 and above in your build path.
-3.Execute clean install once.
+2.Please make sure you have JDK8 and above in your build path.<br/>
+3.Execute clean install once.<br/>
 4.Execute the main file <b>CustomerJobMain.java</b>
