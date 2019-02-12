@@ -1,0 +1,7 @@
+com\rabo\customer\batch\CustomerBatchMain.class
+com\rabo\customer\batch\parser\CustomerCSVParser.class
+com\rabo\customer\batch\processor\CustomerBatchProcessor.class
+com\rabo\customer\batch\parser\FileServiceFactory.class
+com\rabo\customer\batch\parser\CustomerFileProcessor.class
+com\rabo\customer\batch\parser\CustomerXMLParser.class
+com\rabo\customer\batch\model\CustomerRecord.class

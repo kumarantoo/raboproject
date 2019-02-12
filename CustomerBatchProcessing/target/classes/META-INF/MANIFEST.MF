@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: kumar
+Build-Jdk: 11.0.1
+Implementation-Title: CustomerBatchProcessing
+Implementation-Version: 1.0
+Implementation-Vendor-Id: com.rabobank.customer.batch
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/CustomerBatchProcessing
+Created-By: Maven Integration for Eclipse
+
