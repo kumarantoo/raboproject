@@ -5,9 +5,9 @@ Module name :
 
 <b>To run the application please follow the below methods.</b>
 
-1.Install maven 3 and above
-2.Install JDK1.8
-3.Install GIT
+1.Install maven 3 and above <br/>
+2.Install JDK1.8<br/>
+3.Install GIT<br/>
 4.Clone Repository using git clone <URL>
  
 <b>Commands to execute :</b>
