@@ -4,7 +4,6 @@ Module name :
 <b>CustomerStatementJob</b>
 
 <b>To run the application please follow the below methods.</b>
-To run application as executable jar:
 
 1.Install maven 3 and above
 2.Install JDK1.8
