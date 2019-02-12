@@ -21,7 +21,8 @@ Command line arugments first arguemnt should contain <filename> and second argum
 
 Final report will be generated based on data validation , which is placed under resources/reports.txt
 
-#Code Execution with IDE
+
+<b>Code Execution with IDE</b>
 
 To execute the application in any IDE please follow the below steps:
 
