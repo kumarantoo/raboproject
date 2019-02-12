@@ -1,6 +1,9 @@
-Rabobank receives monthly deliveries of customer statement records. This information is delivered in two formats, CSV and XML. These records need to be validated.
+<b>Rabobank receives monthly deliveries of customer statement records. This information is delivered in two formats, CSV and XML. These records need to be validated.</b>
 
-To run the application please follow the below methods.
+Module name :
+<b>CustomerStatementJob</b>
+
+<b>To run the application please follow the below methods.</b>
 To run application as executable jar:
 
 1.Install maven 3 and above
@@ -8,7 +11,7 @@ To run application as executable jar:
 3.Install GIT
 4.Clone Repository using git clone <URL>
  
-Commands to execute :
+<b>Commands to execute :</b>
 1.mvn clean install<br>
 This command will execute all the test cases with date files, which is already placed under resources folder for both xml and csv file format reports.
 
