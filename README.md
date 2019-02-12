@@ -3,7 +3,7 @@
 Module name :
 <b>CustomerStatementJob</b>
 
-<b>To run the application please follow the below methods.</b>
+<b>To run the spring boot application please follow the below methods.</b>
 
 1.Install maven 3 and above <br/>
 2.Install JDK1.8<br/>
@@ -20,3 +20,12 @@ java -jar <jar-file-location> reports.xml xml
 Command line arugments first arguemnt should contain <filename> and second argument should contain file format (xml or csv).
 
 Final report will be generated based on data validation , which is placed under resources/reports.txt
+
+#Code Execution with IDE
+
+To execute the application in any IDE please follow the below steps:
+
+1.Import the poject and maven project.<br/>
+2.Please make sure you have JDK8 and above in your build path.
+3.Execute clean install once.
+4.Execute the main file <b>CustomerJobMain.java</b>
