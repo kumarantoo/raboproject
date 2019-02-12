@@ -3,8 +3,8 @@ package com.rabobank.batch.customerstatement.parsers;
 import java.util.List;
 import java.util.Optional;
 
+import com.rabobank.batch.customerstatement.exception.CustomerException;
 import com.rabobank.batch.customerstatement.model.CustomerRecord;
-import com.rabobank.batch.customerstatement.utils.CustomerException;
 
 
 /**

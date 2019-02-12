@@ -37,6 +37,9 @@ public class SAXCustomProcessor extends DefaultHandler {
 	private CustomerRecord custRecord;
 	private List<CustomerRecord> customerRecordList;
 
+	/**
+	 * Method to get first elements as root and logic for checking duplicate records
+	 */
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
 		if (qName.equalsIgnoreCase("record")) {
@@ -60,7 +63,7 @@ public class SAXCustomProcessor extends DefaultHandler {
 	}
 
 	/**
-	 * 
+	 *  Method to get end elements as root and logic for checking duplicate records
 	 */
 	@Override
 	public void endElement(String uri, String localName, String qName) throws SAXException {
@@ -75,7 +78,7 @@ public class SAXCustomProcessor extends DefaultHandler {
 	}
 	
 	/**
-	 * 
+	 * Overriden method of sax processor to add our own logic
 	 */
 	@Override
 	public void characters(char ch[], int start, int length) throws SAXException {

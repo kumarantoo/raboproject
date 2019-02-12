@@ -15,9 +15,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
 import com.rabobank.batch.customerstatement.config.CustomerStatementConfig;
+import com.rabobank.batch.customerstatement.exception.CustomerException;
 import com.rabobank.batch.customerstatement.model.CustomerRecord;
 import com.rabobank.batch.customerstatement.processor.CustomerBatchProcessor;
-import com.rabobank.batch.customerstatement.utils.CustomerException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @TestPropertySource(properties=

@@ -14,9 +14,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.xml.sax.SAXException;
 
+import com.rabobank.batch.customerstatement.exception.CustomerException;
 import com.rabobank.batch.customerstatement.model.CustomerRecord;
 import com.rabobank.batch.customerstatement.parsers.ICustomerFileProcessor;
-import com.rabobank.batch.customerstatement.utils.CustomerException;
 import com.rabobank.batch.customerstatement.utils.SAXCustomProcessor;
 
 import lombok.extern.slf4j.Slf4j;

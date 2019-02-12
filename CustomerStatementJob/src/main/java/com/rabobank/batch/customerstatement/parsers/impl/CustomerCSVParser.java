@@ -14,10 +14,10 @@ import org.springframework.stereotype.Component;
 
 import com.opencsv.CSVReader;
 import com.rabobank.batch.customerstatement.CustomerJobMain;
+import com.rabobank.batch.customerstatement.exception.CustomerException;
 import com.rabobank.batch.customerstatement.model.CustomerRecord;
 import com.rabobank.batch.customerstatement.parsers.ICustomerFileProcessor;
 import com.rabobank.batch.customerstatement.utils.CustUtils;
-import com.rabobank.batch.customerstatement.utils.CustomerException;
 
 import lombok.extern.slf4j.Slf4j;
 
