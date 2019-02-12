@@ -17,6 +17,6 @@ This command will execute all the test cases with date files, which is already p
 2.To excute the jar :
 java -jar <jar-file-location> reports.xml xml
   
-Command line arugments first arguemnt should contain filename and second argument should contain file format (xml or csv).
+Command line arugments first arguemnt should contain <filename> and second argument should contain file format (xml or csv).
 
 Final report will be generated based on data validation , which is placed under resources/reports.txt
