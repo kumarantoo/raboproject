@@ -29,14 +29,14 @@ To execute the application in any IDE please follow the below steps:
 1.Import the poject and maven project.<br/>
 2.Please make sure you have JDK8 and above in your build path.<br/>
 3.Execute clean install once.<br/>
-4.Execute the main file <b>CustomerJobMain.java</b>
+4.Execute the main file <b>CustomerJobMain.java</br>
 
 <b>Test case execution<b>
  
  To execute the JUNIT test cases please follow the below method<br/>
  1.Execute the test class CustomerJobMain.java <br/>
  2.Place all the data files under src/test/resources folder
- 
+ ---------------------------------------------------------------------------------------
  <b> RaboBank UI Assignment Spring boot and AngularJS<b>
  
  Please follow the same installation procedure to install pre request software application before booting this web app
