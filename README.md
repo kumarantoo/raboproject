@@ -36,3 +36,17 @@ To execute the application in any IDE please follow the below steps:
  To execute the JUNIT test cases please follow the below method<br/>
  1.Execute the test class CustomerJobMain.java <br/>
  2.Place all the data files under src/test/resources folder
+ 
+ <b> RaboBank UI Assignment Spring boot and AngularJS<b>
+ 
+ Please follow the same installation procedure to install pre request software application before booting this web app
+ 
+ <br>
+ To run web application : <br/>
+ Run the below Java file, which will bring up the embedded Tomcat with port 8080 <br/>
+ <b>RaboBankMainApp.java</b> <br/>
+ 
+ To access the application please open browser and enter the below URL: <br/>
+ <b>localhost:8080<b>
+ 
+ 
