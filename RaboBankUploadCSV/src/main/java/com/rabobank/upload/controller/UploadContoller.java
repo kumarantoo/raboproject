@@ -64,6 +64,7 @@ public class UploadContoller {
 	public String handleFileUpload(@RequestParam("file") MultipartFile file,
 			RedirectAttributes redirectAttributes) {
 		log.info("Getting handleFileUpload to upload filed");
+		storageService.store(file);
 		redirectAttributes.addFlashAttribute("message",
 				"You successfully uploaded " + file.getOriginalFilename() + "!");
 		return "redirect:/";
