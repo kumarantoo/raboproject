@@ -11,7 +11,8 @@ Module name :
 4.Clone Repository using git clone <URL>
  
 <b>Commands to execute :</b>
-1.mvn clean install or mvn spring-boot:run <br>
+1.mvn clean install  or <br/>
+mvn spring-boot:run <br>
 This command will execute all the test cases with date files, which is already placed under resources folder for both xml and csv file format reports.
 
 2.To excute the jar :
