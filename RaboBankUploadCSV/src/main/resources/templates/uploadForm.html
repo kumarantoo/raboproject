@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Rabo Bank Web Application for Record upload</title>
+<meta charset="utf-8" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="js/mainapp.js"></script>
+<script src="js/upload.js"></script>
+<script src="js/getdata.js"></script>
+</head>
+<body ng-app="MainApp">
+	<h2><center>Rabo Bank Web Application for Record upload<center></h2>
+
+	<div ng-controller="UploadFileController" align="center">
+		<div ngIf="successFull">
+			<h2>{{successMessage}}</h2>
+		</div>
+		<form>
+			<div ng-hide="successFull" class="ng-hide">
+				<br />Select CSV File to upload <input type="file"
+					file-model="myForm.files[0]" /><br /> <br />
+				<button type="button" ng-click="doUploadFile()">Upload</button>
+			</div>
+		</form>
+		<div style="margin-top: 5px" ng-controller="getcontroller"
+			ng-show="successFull">
+			<button ng-click="getfunction()" type="button"
+				class="btn btn-default" style="margin: 10px 0px 10px 0px;">Get
+				All Data</button>
+			<div
+				style="background-color: #67597E; color: white; padding: 20px 20px 20px 20px"
+				ng-if="getDivAvailable">
+				<input type="text" ng-model="search"
+					placeholder="Enter some issue count to search" />
+				<table cellpadding="1" cellspacing="1" border="1">
+					<tr>
+						<th>FirstName</th>
+						<th>Sur Name</th>
+						<th>Date of Birth</th>
+						<th>IssueCounts</th>
+					</tr>
+					<tr ng-repeat="x in response | filter : search">
+						<td>{{x.firstName}}</td>
+						<td>{{x.SurName}}</td>
+						<td>{{x.dob}}</td>
+						<td>{{x.issueCount}}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
