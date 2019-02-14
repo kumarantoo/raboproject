@@ -24,7 +24,7 @@ public class CustUtils {
 	 * @return
 	 */
 	public Boolean isValidEndBalance(Double endBalance,Double startBalance,Double mut) {
-		log.info("----Starting isValidEndBalance validation ------");
+		log.debug("----Starting isValidEndBalance validation ------");
 		Double finalBalance = startBalance + mut;
 		double bal =  (double) Math.round(finalBalance * 100) / 100;
 		if (bal == endBalance) {
