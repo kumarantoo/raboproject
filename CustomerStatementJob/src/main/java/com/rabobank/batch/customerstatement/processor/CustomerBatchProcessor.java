@@ -54,15 +54,18 @@ public class CustomerBatchProcessor {
 				           .stream()
 				           .map(a -> String.valueOf(a.getDescription()))
 				           .collect(Collectors.joining(","));
-				log.error("----CustomerBatchProcessor--------"+desc);
 				String trancationRef = finalList
 				           .stream()
 				           .map(a -> String.valueOf(a.getRecordRefNumber()))
 				           .collect(Collectors.joining(","));
-				sb.append(desc);
+				sb.append(desc+"\n");
 				sb.append(trancationRef);
-				  FileWriter fw=new FileWriter(classLoader.getResource("reports.txt").getFile());   
-				//BufferedWriter bufferWriter = new BufferedWriter(new FileWriter(classLoader.getResource("reports.txt").getFile()));
+				/** Write report to files under traget/classes/reports.txt 
+				 * format 
+				 * Tickets from Erik de Vries,Tickets from Erik de Vries,Tickets for Rik Theuß
+				 * 130498,130498
+				 ***/
+				FileWriter fw=new FileWriter(classLoader.getResource("reports.txt").getFile());   
 				fw.write(sb.toString());
 				fw.close();
 			}
