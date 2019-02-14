@@ -33,8 +33,9 @@
 			<div
 				style="background-color: #67597E; color: white; padding: 20px 20px 20px 20px"
 				ng-if="getDivAvailable">
-				<input type="text" ng-model="search"
-					placeholder="Enter some issue count to search" />
+				<!-- <input type="text" ng-model="search"
+					placeholder="Enter some issue count to search" /> -->
+					Enter IssueCount to Filter:<input ng-model="searchtxt.issueCount" type="text" placeholder="Flter key">
 				<table cellpadding="1" cellspacing="1" border="1">
 					<tr>
 						<th>FirstName</th>
@@ -42,7 +43,7 @@
 						<th>Date of Birth</th>
 						<th>IssueCounts</th>
 					</tr>
-					<tr ng-repeat="x in response | filter : search">
+					<tr ng-repeat="x in response | filter: searchtxt">
 						<td>{{x.firstName}}</td>
 						<td>{{x.SurName}}</td>
 						<td>{{x.dob}}</td>
