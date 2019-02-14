@@ -49,7 +49,7 @@ To execute the application in any IDE please follow the below steps:
  
  <b> RaboBank UI Assignment Spring boot and AngularJS</b>
  <br/>
- Module Name : RaboBankUploadCSV <br/>
+ Module Name : <b>RaboBankUploadCSV</b> <br/>
  Please follow the same installation procedure to install pre request software application before booting this web app
 
  <br/>
@@ -63,5 +63,7 @@ To execute the application in any IDE please follow the below steps:
  2.To access the application please open browser and enter the below URL:
  <br/>
  <b>localhost:8080<b>
+ 
+ 
  
  
