@@ -38,16 +38,18 @@ To execute the application in any IDE please follow the below steps:
  To execute the JUNIT test cases please follow the below method<br/>
  1.Execute the test class CustomerJobMain.java <br/>
  2.Place all the data files under src/test/resources folder <br/>
- Final Report can be find under target/classes/reports.txt as CSV format 
- First line will have transcation Description and second line will have transcation reference numbers
+ 
+ Final Report below format can be find under <b>target/classes/reports.txt</b> as CSV format  <br/>
+ First line will have transcation Description and second line will have transcation reference numbers<br/>
+ 
  Tickets from Erik de Vries,Tickets from Erik de Vries,Tickets for Rik Theuß
  130498,130498,165102
 
  ---------------------------------------------------------------------------------------
  
- <b> RaboBank UI Assignment Spring boot and AngularJS<b>
+ <b> RaboBank UI Assignment Spring boot and AngularJS</b>
  <br/>
-Module Name : RaboBankUploadCSV <br/>
+ Module Name : RaboBankUploadCSV <br/>
  Please follow the same installation procedure to install pre request software application before booting this web app
 
  <br/>
