@@ -30,14 +30,14 @@ To execute the application in any IDE please follow the below steps:
 1.Import the poject and maven project.<br/>
 2.Please make sure you have JDK8 and above in your build path.<br/>
 3.Execute clean install once.<br/>
-4.Execute the main file <b>CustomerJobMain.java <b>
+4.Execute the main file <b>CustomerJobMain.java</b>
  
 <br/>
-<b>Test case execution<b>
+<b>Test case execution</b>
  
  To execute the JUNIT test cases please follow the below method<br/>
  1.Execute the test class CustomerJobMain.java <br/>
- 2.Place all the data files under src/test/resources folder
+ 2.Place all the data files under src/test/resources folder <br/>
  Final Report can be find under target/classes/reports.txt as CSV format 
  First line will have transcation Description and second line will have transcation reference numbers
  Tickets from Erik de Vries,Tickets from Erik de Vries,Tickets for Rik Theuß
