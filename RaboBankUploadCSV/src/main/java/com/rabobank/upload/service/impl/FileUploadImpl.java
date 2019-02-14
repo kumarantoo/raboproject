@@ -48,8 +48,6 @@ public class FileUploadImpl implements FileUpload {
 	@Override
 	public List<Records> store(MultipartFile file) {
 		log.info("Inside store logic service");
-		System.out.println(rootLocation);CSVReader reader = null;
-		String[] record = null;
 		List<Records> recordList = new ArrayList<Records>();
 		String filename = StringUtils.cleanPath(file.getOriginalFilename());
 		try {
@@ -65,7 +63,6 @@ public class FileUploadImpl implements FileUpload {
 			try (InputStream inputStream = file.getInputStream()) {
 				Files.copy(inputStream, this.rootLocation.resolve(filename),
 						StandardCopyOption.REPLACE_EXISTING);
-				FileReader readerFile =new FileReader(rootLocation+"/"+filename);  
 			}
 		}
 		catch (IOException e) {
