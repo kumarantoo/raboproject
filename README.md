@@ -10,7 +10,7 @@ Module name :
 3.Install GIT<br/>
 4.Clone Repository using git clone <URL>
  
-<b>Commands to execute :</b>
+<b>Commands to execute :</b> <br/>
 1.mvn clean install  or <br/>
 mvn spring-boot:run <br>
 This command will execute all the test cases with date files, which is already placed under resources folder for both xml and csv file format reports.
@@ -55,7 +55,9 @@ To execute the application in any IDE please follow the below steps:
  <br/>
  To run web application : <br/>
  1.Run the below Java file, which will bring up the embedded Tomcat with port 8080 <br/>
- <b>RaboBankMainApp.java</b> 
+ <b>RaboBankMainApp.java</b> <br/>
+ or<br/>
+ Run : <b>mvn spring-boot:run </b> <br/>
  <br/>
  
  2.To access the application please open browser and enter the below URL:
